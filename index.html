@@ -186,7 +186,7 @@
     <h1 id="greeting"></h1>
 
     <div id="buttons">
-        <button onclick="webviewExpand();">Expand Webview Neo</button>
+        <button onclick="webviewExpand();">Expand Webview Neo2</button>
         <small>(The window goes fullscreen)</small>
         <button onclick="toggleMainButton(this);">Hide Main Button</button>
         <small>(It hides/shows main button)</small>
@@ -221,6 +221,7 @@
     </ul>
 
     <h3>Init Data: </h3>
+    <div id="initDataBegin">NO JQUERY</div>
     <pre id="initData"></pre>
     <h3>Init Data (unsafe): </h3>
     <pre id="initDataUnsafe"></pre>
@@ -307,7 +308,7 @@
     }
     
     $(function() {
-        requestLocation();
+        $("#initDataBegin").html("JQUERY STARTED");
     });
 </script>
 </body>
